@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <style>
+    #TV{
+        width: 500px;
+        height: 500px;
+        background-color: red;
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <div id="TV"></div>
+    <script>
+     var TV=document.getElementById('TV');
+        TV.onclick=function(){
+      
+       var hc=confirm('是否有火车票');
+       var sfz=confirm('是否有身份证');
+       alert(hc|sfz?'进入':'不可进入');
+       }
+    </script>
+</body>
+</html>

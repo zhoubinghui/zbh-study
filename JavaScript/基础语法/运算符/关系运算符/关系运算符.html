@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="wdnmd" placeholder="请输入年龄"><button id="btn">点击吃饭</button>
+    <script>
+          var wdnmd=document.getElementById('wdnmd');
+          var btn=document.getElementById('btn');
+          btn.onclick=function(){
+              if (wdnmd.value<=6) {
+                  alert('免费吃饭');
+              } else if (wdnmd.value>=80) {
+                  alert('五折吃饭');
+              } else {
+                  alert('正常吃饭');
+              }
+                  
+              }
+    </script>
+</body>
+</html>
