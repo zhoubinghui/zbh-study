@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+    <style>
+        div{
+            width: 200px;
+        height: 200px;
+        }
+     .a{
+        background-color: red;
+     }
+     .b{
+         background-color: blue;
+     }
+     </style>
+<body>
+    <div id="q" class="a"></div>
+    <button id="btn">点击</button>
+    <script>
+   var a=document.getElementById('a');
+   var q=document.getElementById('q');
+   btn.onclick=function(){
+       q.className='b';
+   }
+    </script>
+</body>
+</html>

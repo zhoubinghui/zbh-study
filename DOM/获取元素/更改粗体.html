@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div id="lx">我只是一个路过的假面骑士</div>
+    <script>
+        var lx=document.getElementById('lx');
+        console.log(lx.tagName);
+        //那些标签是加粗的:h1~h6,b,strong
+        //|H1|||H2|||H3|||H4|||H5|||H6|||B||STRONG
+        // 第一种方法：
+        if(lx.tagName =='H1'||lx.tagName=='H2'||lx.tagName=='H3'||lx.tagName=='H4'||lx.tagName=='H5'||lx.tagName=='H6'||lx.tagName=='B'||lx.tagName=='STRONG'){
+            lx.style.fontWeight=400;
+        }
+        //第二种方法：就是直接写  lx.style.fontWeight=400;(不管是不是粗体，都变成细体)、
+         //方法三:
+         var arr = ['H1','H2','H3','H4','H5','H6','B','STRONG'];
+        // console.log(arr.indexOf('DIV'))
+        //检测数组里是否有粗体的标签名 ,返回-1以外的都是粗体
+        var isTure = arr.indexOf(lx.tagName);
+        console.log(isTure);
+        //判断如是粗体标签名 就改变样式
+        if(isTure != -1){
+            lx.style.fontWeight = 200;
+            lx.style.color = 'red';
+        }
+    </script>
+</body>
+</html>
