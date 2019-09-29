@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="h1"></h1>
+   <p id="p"></p>
+   <ul id="ul"></ul>
+   <table id="tab">
+       
+   </table>
+    <script>
+        // 用变量承接在文档中'创建'一个元素
+        var div =document.createElement('div');
+        //讲已经创建的元素放在想放的位置
+        document.body.appendChild(div);
+
+        var h1=document.getElementById('h1');
+        var a=document.createElement('a');
+        h1.appendChild(a);
+
+        var p=document.getElementById('p');
+        var span=document.createElement('span');
+        p.appendChild(span);
+
+        var ul=document.getElementById('ul');
+        // var li=document.createElement('li');
+        // ul.appendChild('li');
+        for(var i=0; i<10;i++){
+            var li=document.createElement('li');
+            ul.appendChild(li);
+        }
+        
+       var tab=document.getElementById('tab');
+        for(var i=0; i<1;i++){
+              var tr=document.createElement('tr');
+              tab.appendChild(tr);
+              
+              for(var i=0; i<3;i++){
+                var td=document.createElement('td');
+                tr.appendChild(td);
+              } 
+        }
+    </script>
+</body>
+</html>

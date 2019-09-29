@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <button id="TAM">TAM</button>
+    <script>
+       var name=10086;  
+       var pass=123456;
+       var ye=1000;
+    TAM.onclick=function(){   
+       var in1=prompt('请输入卡号');  
+       var in2=prompt('请输入密码');
+       if(in1==name && in2==pass){
+         alert('您的账户余额为1000元');
+         var in3=prompt('请输入取款额');
+         if(in3<=ye){
+         	alert('余额剩余'+(ye-in3)+'元');
+         }else{
+         	alert('您的余额不足');
+         }
+       }else{
+            alert('请输入正确账号和密码');
+        }
+       }
+
+    </script>
+</body>
+</html>
